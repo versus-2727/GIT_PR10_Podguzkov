@@ -1,0 +1,13 @@
+name: MyAction
+on: 
+  push:
+      branches: main
+jobs:
+  MyBuild:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build and run
+        run: dotnet run --project qaz/qaz.csproj
