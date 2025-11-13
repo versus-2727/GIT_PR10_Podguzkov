@@ -1,7 +1,7 @@
 name: MyAction
 on: 
   push:
-      branches: main
+      branches: master
 jobs:
   MyBuild:
     runs-on: windows-latest
